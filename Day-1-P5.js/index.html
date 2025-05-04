@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P5.js Creative Gallery</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #1a1a1a;
+      color: #f5f5f5;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #333;
+    }
+
+    .tab-button {
+      background: none;
+      border: none;
+      color: #aaa;
+      font-size: 1rem;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+      font-weight: 600;
+    }
+
+    .tab-button.active {
+      color: #fff;
+      border-bottom: 3px solid #3498db;
+    }
+
+    .tab-button:hover {
+      color: #fff;
+    }
+
+    .visualization-options {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .vis-button {
+      background: #333;
+      border: none;
+      color: #fff;
+      margin: 0 5px;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .vis-button.active {
+      background: #3498db;
+    }
+
+    .canvas-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .info-panel {
+      background: #222;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    .info-panel h2 {
+      margin-top: 0;
+      color: #3498db;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .info-card {
+      background: #2a2a2a;
+      padding: 15px;
+      border-radius: 6px;
+    }
+
+    .info-card h3 {
+      margin-top: 0;
+      color: #3498db;
+    }
+
+    .info-card p {
+      color: #ddd;
+      font-size: 0.9rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>P5.js Creative Gallery</h1>
+      <p>Interactive visualizations created with pure p5.js</p>
+    </header>
+
+    <div class="tabs">
+      <button class="tab-button active" data-tab="advanced">Advanced Visualizations</button>
+      <button class="tab-button" data-tab="original">Original Sketch</button>
+      <button class="tab-button" data-tab="examples">More Examples</button>
+    </div>
+
+    <!-- Advanced visualization options -->
+    <div id="advanced-tab" class="tab-content">
+      <div class="visualization-options">
+        <button class="vis-button active" data-vis="particles">Particles</button>
+        <button class="vis-button" data-vis="flowField">Flow Field</button>
+        <button class="vis-button" data-vis="noisyCircle">Noisy Circle</button>
+      </div>
+      <div class="canvas-container" id="advanced-canvas"></div>
+    </div>
+
+    <!-- Original sketch tab -->
+    <div id="original-tab" class="tab-content hidden">
+      <div class="canvas-container" id="original-canvas"></div>
+    </div>
+
+    <!-- Examples tab -->
+    <div id="examples-tab" class="tab-content hidden">
+      <div class="visualization-options">
+        <button class="vis-button active" data-vis="bouncingBall">Bouncing Ball</button>
+        <button class="vis-button" data-vis="coloredRectangles">Colored Rectangles</button>
+        <button class="vis-button" data-vis="circularMotion">Circular Motion</button>
+      </div>
+      <div class="canvas-container" id="examples-canvas"></div>
+    </div>
+
+    <div class="info-panel">
+      <h2>About This Application</h2>
+      <p>
+        This application showcases the power of p5.js for creative coding and visualization.
+        All interactions and visualizations are built using p5.js in a structured, object-oriented manner.
+      </p>
+      
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Model</h3>
+          <p>Data structures and properties driving our visualizations, including particles, vectors, and noise parameters.</p>
+        </div>
+        <div class="info-card">
+          <h3>View</h3>
+          <p>The visual rendering of sketches using p5.js's drawing capabilities, organized into separate renderers.</p>
+        </div>
+        <div class="info-card">
+          <h3>Controller</h3>
+          <p>Logic that connects user interactions to visualization behavior and manages application state.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/js/main.js" type="module"></script>
+</body>
+</html>
