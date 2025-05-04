@@ -92,3 +92,15 @@ To add new visualizations:
 ---
 
 Created as part of the [100 Days of JavaScript Libraries](../../README.md) challenge - Day 1.
+
+
+## 📸 Screenshots
+
+
+![Screenshot 2025-05-05 033828](https://github.com/user-attachments/assets/749cc50a-3995-425d-87ea-ddbecd4bfe0c)
+
+![Screenshot 2025-05-05 033847](https://github.com/user-attachments/assets/68d66bc0-3617-4c48-8ba9-2481f8ec5537)
+
+![Screenshot 2025-05-05 033923](https://github.com/user-attachments/assets/894676c0-e24b-4851-b9ad-a6c4a2d6cf53)
+
+![Screenshot 2025-05-05 033903](https://github.com/user-attachments/assets/f8c07c29-7e38-4f20-bde3-3a16848b76fc)
