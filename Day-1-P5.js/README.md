@@ -1,12 +1,94 @@
-# React + Vite
+# 🎨 P5.js Creative Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![P5.js Banner](https://p5js.org/assets/img/p5js.svg)
 
-Currently, two official plugins are available:
+A structured p5.js application showcasing various visual effects and creative coding techniques using an MVC (Model-View-Controller) architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **Multiple Visualizations** - Explore particles, flow fields, and noisy circles
+- **Interactive UI** - Switch between different sketches with a clean interface
+- **Clean Architecture** - Organized with MVC pattern for better code structure
+- **Pure p5.js** - Built with vanilla JavaScript and p5.js only
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🏗️ Project Structure
+
+```
+src/
+├── js/
+│   ├── models/          # Data structures and properties
+│   │   ├── ParticleModel.js
+│   │   ├── CirclePointModel.js
+│   │   └── FlowFieldModel.js
+│   ├── views/           # Visual rendering components
+│   │   ├── AdvancedSketchView.js
+│   │   ├── OriginalSketchView.js
+│   │   └── ExamplesSketchView.js
+│   ├── controllers/     # Application logic
+│   │   └── AppController.js
+│   └── main.js          # Application entry point
+└── index.html           # Main HTML file
+```
+
+## 🖌️ Visualizations
+
+### Advanced Visualizations
+
+1. **Particles** - Interactive particle system with perlin noise-based movement
+2. **Flow Field** - Vector field visualization with flowing particles
+3. **Noisy Circle** - Organic, animated circle using perlin noise
+
+### Examples Visualizations
+
+1. **Bouncing Ball** - Classic bouncing ball animation
+2. **Colored Rectangles** - Color component demonstration
+3. **Circular Motion** - Orbital movement with trigonometry
+
+## 🛠️ Technical Implementation
+
+This project demonstrates:
+
+- **Instance Mode p5.js** - Using p5 in a more object-oriented way
+- **Clean Separation of Concerns** - Data, rendering, and logic are separated
+- **Responsive Design** - Works across different screen sizes
+- **Event-Driven Programming** - Uses event listeners for user interactions
+
+## 🧠 Learning Goals
+
+- Understanding creative coding fundamentals
+- Implementing MVC architecture in JavaScript
+- Working with p5.js's particle systems and perlin noise
+- Creating responsive and interactive visualizations
+
+## 🏃‍♂️ Running the Project
+
+Simply open the `index.html` file in a modern browser or use a local server:
+
+```bash
+# Using Node.js http-server (install if needed: npm install -g http-server)
+http-server
+
+# Or with Python
+python -m http.server
+```
+
+## 🔄 Extending the Project
+
+To add new visualizations:
+
+1. Create a new model in `src/js/models/` if needed
+2. Add the rendering logic to the appropriate view in `src/js/views/`
+3. Update the controller to handle the new visualization
+4. Add UI elements to `index.html` to enable user selection
+
+## 📝 Guidelines
+
+- Keep the code modular and maintainable
+- Follow the established MVC pattern
+- Document your code with JSDoc comments
+- Optimize for performance, especially with large particle systems
+- Ensure browser compatibility
+
+---
+
+Created as part of the [100 Days of JavaScript Libraries](../../README.md) challenge - Day 1.
