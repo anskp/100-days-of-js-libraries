@@ -1,7 +1,6 @@
 # 🚀 100 Days of JavaScript Libraries
 
 <div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTB3dW40dHF0dWh0NzdqZGt1aDFmeHo1YWM0YzVicndtZGppZWR5ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kH6CqYiquZFyIWsMbV/giphy.gif" width="400" alt="JavaScript Animation">
   <h3>Exploring one new JavaScript library every day for 100 days! 💪</h3>
 </div>
 
