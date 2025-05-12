@@ -42,7 +42,7 @@ This repository documents my journey of learning and experimenting with 100 diff
         Creative coding gallery with MVC architecture
       </td>
       <td align="center">
-        <img src="https://media.giphy.com/media/iLbNIYR8f6Bs8Xf8aa/giphy.gif" width="200" alt="Day 2 - Paper.js">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXcydm13bWlyNWg5NjM2dzhlYjZ3cmxjdGpzb3h5dTdiZXl2anBzbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0ExbcOSoFGQMssF2/giphy.gif" width="200" alt="Day 2 - Paper.js">
         <br>
         <strong>Day 2: Paper.js</strong>
         <br>
