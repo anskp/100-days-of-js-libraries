@@ -1,0 +1,140 @@
+.toolbar {
+  background-color: #f0f0f0;
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.toolbar-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.toolbar-section {
+  margin-bottom: 20px;
+}
+
+.toolbar-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.toolbar-button {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+  transition: background-color 0.2s;
+}
+
+.toolbar-button:hover {
+  background-color: #f9f9f9;
+}
+
+.toolbar-button.active {
+  background-color: #e4e4e4;
+  font-weight: bold;
+}
+
+.color-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+}
+
+.color-option.active {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.help-text {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.color-wheel-toggle {
+  width: 100%;
+  padding: 8px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.color-wheel-toggle:hover {
+  background-color: #1976D2;
+}
+
+.color-wheel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.color-wheel {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  cursor: crosshair;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.color-wheel-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+.current-color-display {
+  width: 50px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+} 

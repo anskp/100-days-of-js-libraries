@@ -25,7 +25,7 @@ This repository documents my journey of learning and experimenting with 100 diff
 | Day | Library | Description | Link |
 |-----|---------|-------------|------|
 | 1 | [P5.js](https://p5js.org/) | Creative coding gallery with particles, flow fields, and interactive animations | [View](./Day-1-P5.js) |
-| 2 | Coming soon... | | |
+| 2 | [Paper.js](http://paperjs.org/) | Vector graphics drawing tool with shape creation and free drawing | [View](./day-2-paper.js) |
 | 3 | Coming soon... | | |
 | ... | ... | ... | ... |
 
@@ -42,11 +42,11 @@ This repository documents my journey of learning and experimenting with 100 diff
         Creative coding gallery with MVC architecture
       </td>
       <td align="center">
-        <img src="https://via.placeholder.com/200x200?text=Coming+Soon" width="200" alt="Coming Soon">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGFraGxpM2I4aHJ5MGtvaWszdDg2dXhoeHUzdWRtN29lZXpiaWI4diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HlQXkq9hZZMR7sA/giphy.gif" width="200" alt="Day 2 - Paper.js">
         <br>
-        <strong>Day 2: Coming Soon</strong>
+        <strong>Day 2: Paper.js</strong>
         <br>
-        Next project loading...
+        Vector graphics drawing tool with shape tools
       </td>
       <td align="center">
         <img src="https://via.placeholder.com/200x200?text=Coming+Soon" width="200" alt="Coming Soon">
